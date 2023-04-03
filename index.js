@@ -1,4 +1,12 @@
-import express from 'express';
+import express from "express";
 const PORT = 3000;
 const app = express();
+
+app.get("/", (req, res) => {
+  res.send("I am index");
+});
+
+app.get("/hoody" (req, res) => {
+    res.send("I am a hoody")
+})
 
